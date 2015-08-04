@@ -1,3 +1,10 @@
+ClassA: block(num:int->, num2:int<-);
+block (queue: int<>[10])
+   pareach (q:int<>, queue)
+      ClassA(num:queue[x], num2:queue[x+1]);
+   endpareach
+endblock
+
 # Fixed example to print a random A, B, C
 
 writeChars: block (out:char<-, c:char, count:int, done:bool<-)
